@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Molle:ital@1&family=Poppins:wght@200&display=swap');
+.App{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+svg{
+    
+    padding-top:15px;
+    font-family: 'Coiny', cursive;
+    font-size: 105px;
+    font-weight: bold;
+    transition: 1s font-size;
+    top:0;
+    left:0;
+    height:100%;
+
+}
+@media  screen and (max-width:1200px) {
+    svg{
+        font-size:4em;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+    margin-top:-50px;
+    font-size: 3em;
+    font-family: 'Molle', cursive;
+    color: lightcoral;
+    margin-left:50%;
+     
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-form{
+    margin-top:-30px;
+min-height:10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar{
+    width: 50%;
+    border: none;
+    padding: 15px;  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-button{
+    background-color: lightcoral;
+    color: white;
+    border:none;
+    padding:15px;
+}
+.recipes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
